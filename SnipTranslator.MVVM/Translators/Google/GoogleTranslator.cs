@@ -11,7 +11,7 @@ namespace SnipTranslator.MVVM.Translators.Google;
 
 public class GoogleTranslator : ITranslatorEngine
 {
-    private RestClient _client = new RestClient("https://translate.google.com");
+    private RestClient _client = new("https://translate.google.com");
     private string _languageCode = "en";
 
     public GoogleTranslator()

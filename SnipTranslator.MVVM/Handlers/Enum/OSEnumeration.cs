@@ -1,4 +1,4 @@
-﻿namespace SnipTranslator.Handlers.Enum;
+﻿namespace SnipTranslator.MVVM.Handlers.Enum;
 
 public enum OSEnumeration
 {

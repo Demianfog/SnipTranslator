@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
-using Avalonia.Input;
-using SnipTranslator.Handlers.Events;
 using SnipTranslator.Handlers.Keyboard;
+using SnipTranslator.MVVM.Handlers.Events;
 
-namespace SnipTranslator.Handlers;
+namespace SnipTranslator.MVVM.Handlers;
 
 public class WindowsGlobalKeyboardHook : IGlobalKeyboardHook, IDisposable
 {

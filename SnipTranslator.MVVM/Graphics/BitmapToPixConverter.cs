@@ -1,11 +1,6 @@
 ﻿using System;
 using System.IO;
-using Avalonia.Controls.Shapes;
-using Avalonia.Media;
 using Avalonia.Media.Imaging;
-using Avalonia.Platform;
-using Avalonia.Utilities;
-using Avalonia.Direct2D1.Media;
 using SkiaSharp;
 using Tesseract;
 

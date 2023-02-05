@@ -1,9 +1,10 @@
 ﻿using System;
-using SnipTranslator.Handlers.Enum;
-using SnipTranslator.Handlers.Events;
+using SnipTranslator.Handlers;
 using SnipTranslator.Handlers.Keyboard;
+using SnipTranslator.MVVM.Handlers.Enum;
+using SnipTranslator.MVVM.Handlers.Events;
 
-namespace SnipTranslator.Handlers;
+namespace SnipTranslator.MVVM.Handlers;
 
 public class KeyboardEventArgs : EventArgs
 {

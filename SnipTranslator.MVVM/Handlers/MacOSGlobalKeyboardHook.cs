@@ -1,7 +1,7 @@
 ﻿using System;
-using SnipTranslator.Handlers.Events;
+using SnipTranslator.MVVM.Handlers.Events;
 
-namespace SnipTranslator.Handlers;
+namespace SnipTranslator.MVVM.Handlers;
 public class MacOSGlobalKeyboardHook : IGlobalKeyboardHook
 {
     public void SetKeyDown(LocalKeyEventHandler eventHandler)

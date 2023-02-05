@@ -1,6 +1,6 @@
 ﻿using SnipTranslator.Handlers.Keyboard;
 
-namespace SnipTranslator.Handlers.Events; 
+namespace SnipTranslator.MVVM.Handlers.Events; 
 
 public delegate void LocalKeyEventHandler(Keys key, bool Shift, bool Ctrl, bool Alt);
 

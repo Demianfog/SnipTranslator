@@ -1,6 +1,6 @@
-﻿using SnipTranslator.Handlers.Events;
+﻿using SnipTranslator.MVVM.Handlers.Events;
 
-namespace SnipTranslator.Handlers;
+namespace SnipTranslator.MVVM.Handlers;
 
 public interface IGlobalKeyboardHook
 {
