@@ -1,0 +1,42 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="using:SnipTranslator.MVVM"
+             xmlns:viewModels="clr-namespace:SnipTranslator.MVVM.ViewModels"
+             x:Class="SnipTranslator.MVVM.App">
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <viewModels:TrayViewModel />
+    </Design.DataContext>
+    <Application.DataTemplates>
+        <local:ViewLocator />
+    </Application.DataTemplates>
+    <Application.Styles>
+        <FluentTheme Mode="Light" />
+    </Application.Styles>
+    <TrayIcon.Icons>
+        <TrayIcons>
+            <TrayIcon Icon="/Assets/avalonia-logo.ico" ToolTipText="Avalonia Tray Icon ToolTip">
+                <TrayIcon.Menu>
+                    <NativeMenu>
+                        <NativeMenuItem Header="Settings">
+                            <NativeMenu>
+                                <NativeMenuItem Header="Option 1" ToggleType="Radio" IsChecked="True"
+                                                Command="{Binding ToggleCommand}" />
+                                <NativeMenuItem Header="Option 2" ToggleType="Radio" IsChecked="True"
+                                                Command="{Binding ToggleCommand}" />
+                                <NativeMenuItemSeparator />
+                                <NativeMenuItem Header="Option 3" ToggleType="CheckBox" IsChecked="True"
+                                                Command="{Binding ToggleCommand}" />
+                                <NativeMenuItem Icon="/Assets/avalonia-logo.ico" Header="Restore Defaults"
+                                                Command="{Binding ToggleCommand}" />
+                                <NativeMenuItem Header="Disabled option" IsEnabled="False" />
+                            </NativeMenu>
+                        </NativeMenuItem>
+                        <NativeMenuItem Header="Exit" Command="{Binding ExitCommand}" />
+                    </NativeMenu>
+                </TrayIcon.Menu>
+            </TrayIcon>
+        </TrayIcons>
+    </TrayIcon.Icons>
+</Application>
